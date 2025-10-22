@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Concept Map Library | Saveetha Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="top-nav">
+      <div class="logo">
+        <span class="icon">🧮</span>
+        Saveetha A to Z
+      </div>
+      <div class="nav-links">
+        <a href="#" class="nav-link">Welcome</a>
+        <a href="#" class="nav-link">Courses</a>
+        <a href="#" class="nav-link">Tools</a>
+        <a href="#submit-request" class="nav-link">Contact</a>
+      </div>
+      <div class="search-global">
+        <input type="text" placeholder="Search courses, tools..." class="search-input-global">
+        <span class="search-icon-global">🔍</span>
+      </div>
+      <div class="user-actions">
+        <a href="#" class="login-btn">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <ul class="sidebar-menu">
+        <li><a href="#contributors" class="sidebar-link active">📚 Contributors</a></li>
+        <li><a href="#announcements" class="sidebar-link">📰 Announcements</a></li>
+        <li><a href="#cgpa-calculator" class="sidebar-link">📈 CGPA Calculator</a></li>
+        <li><a href="#attendance-calculator" class="sidebar-link">📊 Attendance Calculator</a></li>
+        <li><a href="#assignment-tutorials" class="sidebar-link">📖 Assignments & Tutorials</a></li>
+        <li><a href="#faculty-section" class="sidebar-link">👥 Faculty</a></li>
+        <li><a href="#submit-request" class="sidebar-link">✉️ Submit Request</a></li>
+      </ul>
+      <div class="sidebar-filters">
+        <h4>Filters</h4>
+        <div class="filter-group">
+          <label><input type="checkbox" checked> All</label>
+          <label><input type="checkbox"> Active</label>
+          <label><input type="checkbox"> Completed</label>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <!-- Hero Banner Inspired by References -->
+      <section class="hero-banner">
+        <div class="hero-content">
+          <h1 class="hero-title">Professional Tools & Resources Starting Soon</h1>
+          <p class="hero-subtitle">Let's work to that promotion. Explore calculators, assignments, and faculty support to boost your academic journey.</p>
+          <button class="hero-cta">View All Tools →</button>
+        </div>
+        <div class="hero-image-placeholder">
+          <img src="https://via.placeholder.com/400x300/FF9D76/F9FBFC?text=Student+Success" alt="Student Success Image" class="hero-img">
+          <p class="hero-caption">Let's do this!</p>
+        </div>
+      </section>
+
+      <!-- Contributors Section - Updated with 🙏 above name, unique colors, hover effects -->
+      <section class="section" id="contributors">
+        <header class="section-header">
+          <h2 class="section-title">Contributors</h2>
+          <p class="section-subtitle">Thanks to our amazing community for uploading and sharing resources! 🙏</p>
+        </header>
+        <div id="contributorGrid" class="contributor-grid">
+          <!-- Updated cards: 🙏 above name, unique border accents, short appreciation message -->
+          <div class="contributor-card contributor-card-1">
+            <div class="contributor-icon">📄</div>
+            <div class="contributor-info">
+              <div class="contributor-prayer">🙏</div>
+              <h3 class="contributor-name">John Doe</h3>
+              <p class="contributor-handle">@johndoe</p>
+              <p class="contributor-description">Uploaded Java Concept Maps and Python Tutorials.</p>
+              <p class="contributor-thanks">Your dedication inspires us all!</p>
+            </div>
+          </div>
+          <div class="contributor-card contributor-card-2">
+            <div class="contributor-icon">📁</div>
+            <div class="contributor-info">
+              <div class="contributor-prayer">🙏</div>
+              <h3 class="contributor-name">Jane Smith</h3>
+              <p class="contributor-handle">@janesmith</p>
+              <p class="contributor-description">Shared Database Management Systems resources.</p>
+              <p class="contributor-thanks">Grateful for your generous sharing!</p>
+            </div>
+          </div>
+          <div class="contributor-card contributor-card-3">
+            <div class="contributor-icon">📚</div>
+            <div class="contributor-info">
+              <div class="contributor-prayer">🙏</div>
+              <h3 class="contributor-name">Mike Johnson</h3>
+              <p class="contributor-handle">@mikejohnson</p>
+              <p class="contributor-description">Contributed Operating Systems assignments.</p>
+              <p class="contributor-thanks">Thank you for your tireless efforts!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Announcements Section - Similar Layout -->
+      <section class="section" id="announcements">
+        <header class="section-header">
+          <h2 class="section-title">Announcements</h2>
+          <p class="section-subtitle">Stay updated with the latest news and updates from Saveetha! 📰</p>
+        </header>
+        <div id="announcementGrid" class="course-grid">
+          <!-- Placeholder for announcements; add similar cards via JS -->
+          <div class="course-card announcement-card">
+            <div class="announcement-date">Oct 20, 2025</div>
+            <h3 class="course-title">Midterm Exam Schedule Released</h3>
+            <p class="course-description">The midterm exam schedule for all courses has been published. Check your student portal for details.</p>
+          </div>
+          <div class="course-card announcement-card">
+            <div class="announcement-date">Oct 18, 2025</div>
+            <h3 class="course-title">New Library Resources Available</h3>
+            <p class="course-description">Access the latest e-books and journals on Java and Algorithms in the library section.</p>
+          </div>
+          <div class="course-card announcement-card">
+            <div class="announcement-date">Oct 15, 2025</div>
+            <h3 class="course-title">Workshop on Python Programming</h3>
+            <p class="course-description">Join the upcoming workshop on advanced Python topics this Friday. Registration open now!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CGPA Calculator Section - Embedded as Interactive Card -->
+      <section class="section" id="cgpa-calculator">
+        <header class="section-header">
+          <h2 class="section-title">CGPA Calculator</h2>
+          <p class="section-subtitle">Track your academic progress and boost your grades with ease! 🚀</p>
+        </header>
+        <div class="tool-card">
+          <div class="tool-content">
+            <div class="input-group">
+              <label>Number of S Grades:</label>
+              <input type="number" id="s" min="0" value="0" />
+            </div>
+            <!-- Similar inputs for A, B, C, D, E -->
+            <div class="input-group"><label>Number of A Grades:</label><input type="number" id="a" min="0" value="0" /></div>
+            <div class="input-group"><label>Number of B Grades:</label><input type="number" id="b" min="0" value="0" /></div>
+            <div class="input-group"><label>Number of C Grades:</label><input type="number" id="c" min="0" value="0" /></div>
+            <div class="input-group"><label>Number of D Grades:</label><input type="number" id="d" min="0" value="0" /></div>
+            <div class="input-group"><label>Number of E Grades:</label><input type="number" id="e" min="0" value="0" /></div>
+            <button onclick="calculateCGPA()" class="calc-btn">Calculate CGPA</button>
+            <div id="result" class="result-display">10.00</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Similar for Attendance Calculator -->
+      <section class="section" id="attendance-calculator">
+        <header class="section-header">
+          <h2 class="section-title">Attendance Calculator</h2>
+          <p class="section-subtitle">Calculate your attendance and see what it takes to reach 80%! 📊</p>
+        </header>
+        <div class="tool-card">
+          <div class="tool-content">
+            <div class="input-group">
+              <label>Classes Attended:</label>
+              <input type="number" id="attended" min="0" value="0" placeholder="e.g., 40" />
+            </div>
+            <div class="input-group">
+              <label>Total Classes:</label>
+              <input type="number" id="total" min="0" value="0" placeholder="e.g., 50" />
+            </div>
+            <button onclick="calculateAttendance()" class="calc-btn">Calculate Attendance</button>
+            <div id="attendance-result">
+              <div class="attendance-percent">0.0%</div>
+              <p id="attendance-note">Enter your class details above.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Assignment Section with Search - Updated with 📘 icon, type, Get Started! button -->
+      <section class="section" id="assignment-tutorials">
+        <header class="section-header">
+          <h2 class="section-title">Assignment & Tutorials</h2>
+          <p class="section-subtitle">Access assignments and tutorials to excel in your coursework. Search and dive in! 📚</p>
+        </header>
+        <div class="search-wrapper">
+          <div class="search-container">
+            <input type="text" id="assignment-search" placeholder="Search assignments/tutorials by subject or code... 📘" class="search-input">
+            <span class="search-icon">📘</span>
+          </div>
+        </div>
+        <div id="assignmentGrid" class="course-grid">
+          <!-- Updated cards: 📘 icon, type, Get Started! button -->
+          <div class="course-card assignment-card">
+            <div class="assignment-icon">📘</div>
+            <div class="assignment-type">Assignment</div>
+            <div class="assignment-code">CSAO09</div>
+            <h3 class="course-title">Programming in Java</h3>
+            <button class="get-started-btn">Get Started!</button>
+            <div class="views-count">👁️ 2</div>
+          </div>
+          <div class="course-card assignment-card">
+            <div class="assignment-icon">📘</div>
+            <div class="assignment-type">Tutorial</div>
+            <div class="assignment-code">BTAL1</div>
+            <h3 class="course-title">Biology and Environmental Science for Engineers</h3>
+            <button class="get-started-btn">Get Started!</button>
+            <div class="views-count">👁️ 8</div>
+          </div>
+          <div class="course-card assignment-card">
+            <div class="assignment-icon">📘</div>
+            <div class="assignment-type">Assignment</div>
+            <div class="assignment-code">CSAO04</div>
+            <h3 class="course-title">Operating Systems Map</h3>
+            <button class="get-started-btn">Get Started!</button>
+            <div class="views-count">👁️ 3</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Faculty Section - Updated search placeholder, enhanced hover highlight -->
+      <section class="section" id="faculty-section">
+        <header class="section-header">
+          <h2 class="section-title">Call Faculty</h2>
+          <p class="section-subtitle">Connect with your professors for guidance and support. Search and reach out! 📞</p>
+        </header>
+        <div class="search-wrapper">
+          <div class="search-container">
+            <input type="text" id="faculty-search" placeholder="Search faculty by name or course... 🔍" class="search-input">
+            <span class="search-icon">🔍</span>
+          </div>
+        </div>
+        <div id="facultyGrid" class="course-grid">
+          <!-- Cards already match; hover effects in CSS -->
+          <div class="course-card faculty-card">
+            <div class="faculty-icon">👨‍🏫</div>
+            <h3 class="course-title">Dr. J. Mohanan - HOD</h3>
+            <p class="faculty-subject">Java Programming</p>
+            <p class="faculty-phone">📞 +91-9876543210</p>
+            <div class="faculty-rating">
+              <span class="stars">★★★★☆</span> <span class="numeric-rating">(4.8/5)</span>
+            </div>
+          </div>
+          <div class="course-card faculty-card">
+            <div class="faculty-icon">👨‍🏫</div>
+            <h3 class="course-title">Dr. Vijayakumar P</h3>
+            <p class="faculty-subject">Data Structures</p>
+            <p class="faculty-phone">📞 +91-9876543210</p>
+            <div class="faculty-rating">
+              <span class="stars">★★★★★</span> <span class="numeric-rating">(4.5/5)</span>
+            </div>
+          </div>
+          <div class="course-card faculty-card">
+            <div class="faculty-icon">👨‍🏫</div>
+            <h3 class="course-title">S. Premkumar</h3>
+            <p class="faculty-subject">Operating Systems</p>
+            <p class="faculty-phone">📞 +91-9876543210</p>
+            <div class="faculty-rating">
+              <span class="stars">★★★★★</span> <span class="numeric-rating">(4.9/5)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Submit Request Section -->
+      <section class="section" id="submit-request">
+        <header class="section-header">
+          <h2 class="section-title">Contact Us - Submit Request</h2>
+          <p class="section-subtitle">Request to add phone numbers, faculty, concept maps, or assignments/tutorials. Upload files for maps/assignments! 📧</p>
+        </header>
+        <div class="tool-card request-form">
+          <form id="requestForm" enctype="multipart/form-data">
+            <!-- Form fields as before -->
+            <div class="input-group">
+              <label for="request-type">Request Type:</label>
+              <select id="request-type" required>
+                <option value="">Select Type</option>
+                <option value="phone-number">Add Phone Number</option>
+                <option value="faculty">Add Faculty (Name, Rating)</option>
+                <option value="concept-map">Add Concept Map (Upload File)</option>
+                <option value="assignment">Add Assignment/Tutorial (Upload File)</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <!-- Conditional fields as before -->
+            <div id="phone-fields" style="display: none;">
+              <div class="input-group">
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" placeholder="e.g., +91-7569363309" required />
+              </div>
+              <div class="input-group">
+                <label for="phone-name">Associated Name:</label>
+                <input type="text" id="phone-name" placeholder="e.g., Dr. John Doe" required />
+              </div>
+            </div>
+            <!-- Other conditional fields... (faculty, upload) -->
+            <div class="input-group">
+              <label for="user-email">Your Email:</label>
+              <input type="email" id="user-email" placeholder="yourname@saveetha.com" required />
+            </div>
+            <div class="input-group">
+              <label for="description">Additional Details:</label>
+              <textarea id="description" rows="4" placeholder="More info..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Request</button>
+          </form>
+          <div id="form-message" style="display: none;"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="contributors.js"></script>
+  <script src="announcements.js"></script>
+  <script src="assignments.js"></script>
+  <script src="faculty.js"></script>
+  
+  <script>
+    // Scripts as before for calculators and form
+    // ... (insert previous JS code)
+  </script>
+</body>
+</html>
